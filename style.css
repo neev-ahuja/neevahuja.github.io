@@ -122,12 +122,11 @@ nav ul button {
     width: 70vw;
     display: block;
     margin: auto;
+    margin-top: 15vh;
 }
-
 .content h1 {
     font-weight: 600;
     color: #43afa1;
-    margin-top: 15vh;
 }
 
 .content p {
@@ -135,6 +134,22 @@ nav ul button {
 }
 .menu{
     display: none;
+}
+@keyframes menuAnimStart {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 50vw;
+    }
+}
+@keyframes menuAnimEnd {
+    0%{
+        width: 50vw;
+    }
+    100%{
+        width: 0;
+    }
 }
 @media only screen and (max-width: 762px) {
     nav {
@@ -145,7 +160,7 @@ nav ul button {
     }
     .container{
         width: 60vw;
-        transform: translateY(23vh);
+        transform: translateY(30vh);
         text-align: center;
     }
     .img{
@@ -159,12 +174,27 @@ nav ul button {
         margin-right: auto;
     }
     .menu{
+        width: fit-content;
         display: block;
+        position: absolute;
+        z-index: 999;
+        height: 100vh;
     }
     .menu svg{
         padding: 20px;
     }
-    .menu ul{
+    #close{
         display: none;
+    }
+    .menu ul{
+        text-align: center;
+        display: none;
+    }
+    .menu ul a {
+        text-decoration: none;
+    }
+    .menu ul li{
+        padding: 30px;
+        transform: translateY(-10px);
     }
 }

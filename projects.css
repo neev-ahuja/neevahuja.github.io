@@ -4,7 +4,8 @@
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    box-shadow: 0px 0px 10px #43afa1;
 }
 .cont a{
     text-decoration: none;
@@ -43,4 +44,10 @@
 
 .cont strong {
     color: #ffffff;
+}
+
+@media only screen and (max-width: 762px) {
+    .cont{
+        width: 60vw;
+    }
 }
