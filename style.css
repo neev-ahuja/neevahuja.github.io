@@ -178,7 +178,6 @@ nav ul button {
         display: block;
         position: absolute;
         z-index: 999;
-        height: 100vh;
     }
     .menu svg{
         padding: 20px;

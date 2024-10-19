@@ -4,6 +4,7 @@ document.getElementById("menu").onclick = ()=>{
     document.getElementById("ul").style.display = "block";
     document.getElementById("menuCont").style.borderRight = "#43afa1 solid 4px";
     document.getElementById("menuCont").style.width = "50vw";
+    document.getElementById("menuCont").style.height = "100vh";
     document.getElementById("menuCont").style.animation = "menuAnimStart 0.3s";
 }
 document.getElementById("close").onclick = ()=>{
@@ -12,5 +13,6 @@ document.getElementById("close").onclick = ()=>{
     document.getElementById("ul").style.display = "none";
     document.getElementById("menuCont").style.width = "fit-content";
     document.getElementById("menuCont").style.borderRight = "none";
+    document.getElementById("menuCont").style.height = "fit-content";
     document.getElementById("menuCont").style.animation = "menuAnimEnd 0.3s";
 }
